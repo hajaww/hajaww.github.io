@@ -1,0 +1,199 @@
+/* Reset margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #C6E2B5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2E865F; /* Dark green header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #FFFFFF; /* White text */
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #FFFFFF; /* White text */
+}
+
+nav {
+    background-color: #34C759; /* Dark green nav */
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    background-color: #34C759; /* Dark green button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2E865F; /* Dark green hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #F7F7F7; /* Light gray background */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #34C759; /* Dark green text */
+    border-left: 4px solid #34C759; /* Dark green border */
+    padding-left: 10px;
+}
+
+section p, ul {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#excel-data table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #C6E2B5; /* Light green border */
+    
+}
+#excel-data th, #excel-data td {
+    padding: 10px;
+    border: 1px solid #C6E2B5; /* Light green border */
+    text-align: center;
+    background-color: #F7F7F7; /* Light gray background */
+}
+
+#excel-data th {
+    background-color: #34C759; /* Dark green header */
+    color: white;
+}
+
+#excel-data td {
+    background-color: #F7F7F7; /* Light gray background */
+}
+input[type="number"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  input[type="number"]:focus {
+    border: 1px solid #34C759;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type="number"]:hover {
+    border: 1px solid #34C759;
+  }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2E865F; /* Dark green footer */
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+.animate-th {
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+  
+  .animate-th.active {
+    opacity: 1;
+  }
+  @media only screen and (max-width: 768px) {
+    /* Add mobile-specific styles here */
+    table {
+      width: 100%;
+    }
+    th, td {
+      padding: 10px;
+    }
+  }
+  .logo-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.logo-right {
+    float: right;
+    margin-left: 10px;
+}

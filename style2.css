@@ -1,0 +1,239 @@
+.about-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #F7F7F7; /* Light gray background */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Reset margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #C6E2B5; /* Light green background */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2E865F; /* Dark green header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #FFFFFF; /* White text */
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #FFFFFF; /* White text */
+}
+s
+Edit
+Copy code
+/* Add some padding to the About page container */
+.about-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #F7F7F7; /* Light gray background */
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the team member section */
+.team-member {
+  display: flex;
+  flex-direction: column; /* Stack the image and text vertically */
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.team-member img {
+  width: 150px; /* Increase the image size */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Optional, to give the images a rounded corner */
+  margin-bottom: 20px;
+}
+
+.team-member .text {
+  text-align: center; /* Center the text */
+}
+
+.team-member .text h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #34C759; /* Dark green text */
+}
+
+.team-member .text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #666; /* Dark gray text */
+}
+
+/* Add some space between the team members */
+.team-member + .team-member {
+  margin-top: 40px;
+}
+nav {
+    background-color: #34C759; /* Dark green nav */
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Add this to center the nav content */
+}
+
+nav ul {
+    display: inline-flex; /* Change from flex to inline-flex */
+    justify-content: center;
+    list-style-type: none;
+    padding: 0; /* Remove padding to prevent horizontal offset */
+    margin: 0; /* Remove margin to prevent horizontal offset */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    background-color: #34C759; /* Dark green button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2E865F; /* Dark green hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #F7F7F7; /* Light gray background */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #34C759; /* Dark green text */
+    border-left: 4px solid #34C759; /* Dark green border */
+    padding-left: 10px;
+}
+
+section p, ul {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#excel-data table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #C6E2B5; /* Light green border */
+}
+
+#excel-data th, #excel-data td {
+    padding: 10px;
+    border: 1px solid #C6E2B5; /* Light green border */
+    text-align: center;
+    background-color: #F7F7F7; /* Light gray background */
+}
+
+#excel-data th {
+    background-color: #34C759; /* Dark green header */
+    color: white;
+}
+
+#excel-data td {
+    background-color: #F7F7
+}
+
+input[type="number"] {
+    padding: 10px;
+}
+footer p {
+    font-size: 0.9em;
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+footer {
+    background-color: #2E865F; /* Dark green footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #34C759; /* Dark green hover */
+  }
+  .animate-th {
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+  
+  .animate-th.active {
+    opacity: 1;
+  }
+  @media only screen and (max-width: 768px) {
+    /* Add mobile-specific styles here */
+    table {
+      width: 100%;
+    }
+    th, td {
+      padding: 10px;
+    }
+  }
